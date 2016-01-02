@@ -1,0 +1,29 @@
+{{outlet}}
+<div class="container">
+    Current Mode: {{prettyMode}}
+    <button {{action "toggleMode"}} class="btn btn-primary pull-right">Toggle Mode</button>
+
+  <div class="col-md-12">
+      <div class="form-group">
+          <label for="keyword" class="form-control-label">Keyword</label>
+        {{input type="text" class="form-control" value=keyword}}
+      </div>
+  </div>
+
+    <div class="form-group col-md-6">
+        <label for="plaintext" class="form-control-label">Text</label>
+      {{textarea class="form-control" value=messageText}}
+    </div>
+
+    <div class="form-group col-md-6">
+        <label for="ciphertext" class="form-control-label">Result</label>
+      {{textarea class="form-control" value=resultText disabled=true}}
+
+    </div>
+
+    <hr>
+    <p>For more about the Monoalphabetic Substitution Cipher, see this wikipedia article.</p>
+    <a class="embedly-card" href="https://en.wikipedia.org/wiki/Substitution_cipher">Substitution cipher</a>
+    <script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+
+</div>

@@ -1,0 +1,8 @@
+{{outlet}}
+<h2>Here's the list of Ciphers</h2>
+
+<ul>
+    {{#each model as |cipher|}}
+      <li>{{#link-to "monoWithKeyword"}}{{cipher.name}}{{/link-to}}</li>
+    {{/each}}
+</ul>
